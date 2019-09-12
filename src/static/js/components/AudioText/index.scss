@@ -1,0 +1,45 @@
+@import '../../../css/base/typography.scss';
+@import '../../../css/base/color.scss';
+
+.b-audio-text {
+  color: #05294b;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &__li {
+    padding-left: 50px;
+    position: relative;
+    margin-top: 32px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__photo {
+    background-color: #dae7ff;
+    border-radius: 50%;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 0;
+    background-image: url('avatar.png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+  &__time {
+    font-size: 15px;
+    color: $color1;
+    margin-bottom: 4px;
+  }
+  &__phrase {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__phrase .active {
+    background-color: #dae7ff;
+    padding: 2px;
+    margin: 0 -2px 0 -2px;
+  }
+}
